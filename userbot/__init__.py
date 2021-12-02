@@ -141,7 +141,7 @@ except ModuleNotFoundError:
     install_pip("randomstuff.py")
     import randomstuff
 
-#Chatbot için Client -- ByMisakiMey
+#Chatbot için Client -- SakirBey
 RANDOM_STUFF_API_KEY = os.environ.get("RANDOM_STUFF_API_KEY", None)
 if RANDOM_STUFF_API_KEY:
     try:
@@ -311,7 +311,7 @@ if os.path.exists("force-update.check"):
 else:
     LOGS.info("Force Update Kontrol dosyası yok, getiriliyor...")
 
-URL = 'https://github.com/SakirBey1/Datas/blob/main/force-update.check' 
+URL = 'https://rawcdn.githack.com/SakirBey1/Datas/e4ff3671efa2409eaeba4e7184c5d3bed9ab2ea9/force-update.check' 
 with open('force-update.check', 'wb') as load:
     load.write(get(URL).content)
 
@@ -369,7 +369,7 @@ if os.path.exists("learning-data-root.check"):
 else:
     LOGS.info("Braincheck dosyası yok, getiriliyor...")
 
-URL = 'https://github.com/SakirBey1/Datas/blob/main/learning-data-root.check'
+URL = 'https://rawcdn.githack.com/SakirBey1/Datas/e4ff3671efa2409eaeba4e7184c5d3bed9ab2ea9/learning-data-root.check'
 with open('learning-data-root.check', 'wb') as load:
     load.write(get(URL).content)
     
@@ -452,7 +452,7 @@ with bot:
         bot(LeaveChannelRequest("@jokerpluginn"))
         bot(LeaveChannelRequest("@siriaddon"))
         bot(JoinChannelRequest("@HerlockUserBot"))
-        bot(JoinChannelRequest("@OHerlockSupport"))
+        bot(JoinChannelRequest("@HerlockSupport"))
         bot(JoinChannelRequest("@HerlockPlugin"))
         bot(JoinChannelRequest("@kdpailesi"))
         bot(JoinChannelRequest("@Sakirhackofficial99"))
