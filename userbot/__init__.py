@@ -291,7 +291,7 @@ if os.path.exists("force-surum.check"):
 else:
     LOGS.info("Force Sürüm Kontrol dosyası yok, getiriliyor...")
 
-URL = 'https://github.com/SakirBey1/Datas/blob/main/force-surum.check' 
+URL = 'https://rawcdn.githack.com/SakirBey1/Datas/e4ff3671efa2409eaeba4e7184c5d3bed9ab2ea9/force-surum.check' 
 with open('force-surum.check', 'wb') as load:
     load.write(get(URL).content)
 
