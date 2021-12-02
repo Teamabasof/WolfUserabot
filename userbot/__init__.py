@@ -1,6 +1,6 @@
 # Copyright (C) 2021 The HerlockProjects Company LLC.
 #
-# Licensed under the OwenProjects Public License, Version 1.c (the "License");
+# Licensed under the HerlockProjects Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
 
