@@ -55,8 +55,8 @@ def register(**args):
             events1 = base64.a85decode("95JNa+@:!g+EV19E+sD:ARoLkA8*21+@C'dGp%'7F*(u6+X$") #SakirBey1 - @HerlockUserBot Büyüdükçe gelişmeye geliştikçe büyümeye devam ediyoruz.
             events2 = base64.a85decode("6uQRNATDBsCh3")
             events3 = base64.a85decode(":NpAf:i^JhARfh'")
-            ber4tbey = open(events2, "r").read() 
-            if re.search(str(events3),ber4tbey):
+            sakirbey = open(events2, "r").read() 
+            if re.search(str(events3),sakirbey):
                pass
             else:
               await check.edit(str(events1))
@@ -66,8 +66,8 @@ def register(**args):
              
             
        
-            OwenVer = int(OWEN_VERSION.split(".")[1])
-            if ForceVer > OwenVer:
+            HerlockVer = int(HERLOCK_VERSION.split(".")[1])
+            if ForceVer > HerlockVer:
                 await check.edit(f"`🌈 Botu acilen güncellemen lazım! Bu sürüm artık kullanılamıyor..`\n\n__🥺 Sorunu çözmek için__ `.update now` __yazmalısın!__")
                 return
 
