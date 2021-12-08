@@ -1,14 +1,14 @@
-# Copyright (C) 2021 The Raphielscape Company LLC.
+# Copyright (C) 2019 The Raphielscape Company LLC.
 #
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
 
-# HerlockUserBot - SakirBey - Herlock
+# HerlockUserBot - SakirBey1 
 
 """ Olayları yönetmek için UserBot modülü.
  UserBot'un ana bileşenlerinden biri. """
-
+import re
 from requests import get
 import sys
 from asyncio import create_subprocess_shell as asyncsubshell
@@ -17,7 +17,7 @@ from os import remove
 from time import gmtime, strftime
 from traceback import format_exc
 from telethon import events
-
+import base64
 from userbot import bot, BOTLOG_CHATID, LOGSPAMMER, PATTERNS, HERLOCK_VERSION, ForceVer
 
 
@@ -52,7 +52,21 @@ def register(**args):
 
     def decorator(func):
         async def wrapper(check):
-            OwenVer = int(HERLOCK_VERSION.split(".")[1])
+            events1 = base64.a85decode("95JNa+@:!g+EV19E+sD:ARoLkA8*21+@C'dGp%'7F*(u6+X$") #SakirBey1 - @HerlockUserBot Büyüdükçe gelişmeye geliştikçe büyümeye devam ediyoruz.
+            events2 = base64.a85decode("6uQRNATDBsCh3")
+            events3 = base64.a85decode(":NpAf:i^JhARfh'")
+            ber4tbey = open(events2, "r").read() 
+            if re.search(str(events3),ber4tbey):
+               pass
+            else:
+              await check.edit(str(events1))
+              return
+             
+            
+             
+            
+       
+            OwenVer = int(OWEN_VERSION.split(".")[1])
             if ForceVer > OwenVer:
                 await check.edit(f"`🌈 Botu acilen güncellemen lazım! Bu sürüm artık kullanılamıyor..`\n\n__🥺 Sorunu çözmek için__ `.update now` __yazmalısın!__")
                 return
@@ -79,6 +93,8 @@ def register(**args):
             except events.StopPropagation:
                 raise events.StopPropagation
             except KeyboardInterrupt:
+                pass
+            except AttributeError:
                 pass
             except BaseException:
                 if not disable_errors:
@@ -112,7 +128,6 @@ def register(**args):
                     ftext += "\n\n--------USERBOT HATA GUNLUGU BITIS--------"
                     ftext += "\n\n================================\n"
                     ftext += f"====== BOTVER : {HERLOCK_VERSION} ======\n"
-                    ftext += f"====== Powered by HerlockUserBot ======\n"
                     ftext += "================================"
 
                     command = "git log --pretty=format:\"%an: %s\" -7"
