@@ -52,15 +52,7 @@ def register(**args):
 
     def decorator(func):
         async def wrapper(check):
-            events1 = base64.a85decode("95JNa+@:!g+EV19E+sD:ARoLkA8*21+@C'dGp%'7F*(u6+X$") #SakirBey1 - @HerlockUserBot Büyüdükçe gelişmeye geliştikçe büyümeye devam ediyoruz.
-            events2 = base64.a85decode("6uQRNATDBsCh3")
-            events3 = base64.a85decode(":NpAf:i^JhARfh'")
-            sakirbey = open(events2, "r").read() 
-            if re.search(str(events3),sakirbey):
-               pass
-            else:
-              await check.edit(str(events1))
-              return
+            
              
             
              
