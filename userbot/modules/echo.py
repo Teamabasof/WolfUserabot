@@ -85,8 +85,6 @@ async def echo(herlock):
 
 @register(incoming=True)
 async def samereply(herlock):
-    if herlock.chat_id in BLACKLIST_CHAT:
-        return
     if is_echo(herlock.sender_id, herlock.chat_id):
         await asyncio.sleep(1)
         try:
