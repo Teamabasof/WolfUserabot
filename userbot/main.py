@@ -180,7 +180,7 @@ try:
     herlockbl = requests.get('https://raw.githubusercontent.com/SakirBey1/Datas/main/blacklist.json').json()
     if idim in herlockbl:
         bot.send_message("me", f"`❌ Herlock yöneticileri sizi bottan yasakladı! Bot kapatılıyor...`")
-        LOGS.error("Owen yöneticileri sizi bottan yasakladı! Bot kapatılıyor...")
+        LOGS.error("Herlock yöneticileri sizi bottan yasakladı! Bot kapatılıyor...")
         bot.disconnect()
     # ChromeDriver'ı Ayarlayalım #
     try:
@@ -285,7 +285,7 @@ LOGS.info("+==============+==============+==============+==============+")
 LOGS.info("|                                                            |")
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
           " Yardıma İhtiyacınız varsa, Destek grubumuza gelin t.me/HerlockSupport")
-LOGS.info(f"Bot versiyonunuz: Owen ==> {HERLOCK_VERSION}")
+LOGS.info(f"Bot versiyonunuz: Herlock ==> {HERLOCK_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
