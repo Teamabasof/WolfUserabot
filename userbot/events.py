@@ -75,7 +75,7 @@ def register(**args):
                 return
              
             if groups_only and not check.is_group:
-                await check.respond("`⛔ Bunun bir grup olduğunu sanmıyorum. Bu plugini bir grupta dene! `")
+                await check.respond("`⛔ Bunun bir grup olduğunu sanmıyorum. Bu plugini bir grupta dene.! `")
                 return
 
             try:
