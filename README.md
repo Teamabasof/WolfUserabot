@@ -48,7 +48,7 @@
 
 ### 🇹🇷 Geliştiriciler / Developers 🇺🇲
   [![SakirBey](https://github.com/SakirBey1.png?size=100)](https://github.com/SakirBey1)
- [![FrozenBey](https://github.com/Herlockexe.png?size=100)](https://github.com/frozenbey)
+ [![FrozenBey](https://github.com/frozen.png?size=100)](https://github.com/frozenbey)
 
 ## Credit
 
