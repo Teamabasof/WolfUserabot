@@ -21,7 +21,7 @@ LANG = get_value("__herlock")
 
 # ████████████████████████████████ #
 
-@register(outgoing=True, pattern="^.herlock(?: |$)(.*)")
+@register(outgoing=True, pattern="^.[Hh]erlock(?: |$)(.*)")
 async def herlock(event):
     """ .herlock komutun """
     args = event.pattern_match.group(1).lower()
