@@ -9,8 +9,8 @@
     <br>
         |
          |
-        <a href="https://t.me/HerlockUserBot">Kanal/Channel </a> |
-        <a href="https://t.me/HerlockSupport">Destek/Support</a> |
+        <a href="https://t.me/HerlockUserBot1">Kanal/Channel </a> |
+        <a href="https://t.me/HerlockSupport1">Destek/Support</a> |
     <br>
 </p>
 
@@ -31,9 +31,9 @@
 ` https://heroku.com/deploy?template=https://github.com/SakirBey1/HerlockUserBot `
 
 ## 🇹🇷 Bilgilendirme / İnformation 🇺🇲
-***Herhangi bir istek & şikayet & öneriniz varsa [destek grubuna](https://t.me/HerlockSupport) ulaşabilirsiniz.***
+***Herhangi bir istek & şikayet & öneriniz varsa [destek grubuna](https://t.me/HerlockSupport1) ulaşabilirsiniz.***
 
-***You can reach the [support group](https://t.me/HerlockSupport) if there are any requests & complaints & suggestions.***
+***You can reach the [support group](https://t.me/HerlockSupport1) if there are any requests & complaints & suggestions.***
 ```
     Userbottan dolayı; Telegram hesabınız yasaklanabilir.
     Bu bir açık kaynaklı projedir, yaptığınız her işlemden kendiniz sorumlusunuz. Kesinlikle Herlock yöneticileri sorumluluk kabul etmemektedir.
