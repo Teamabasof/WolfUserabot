@@ -284,7 +284,7 @@ LOGS.info("|                     ✨Herlcok Userbot✨                       |")
 LOGS.info("+==============+==============+==============+==============+")
 LOGS.info("|                                                            |")
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
-          " Yardıma İhtiyacınız varsa, Destek grubumuza gelin t.me/HerlockSupport")
+          " Yardıma İhtiyacınız varsa, Destek grubumuza gelin t.me/HerlockSupport1")
 LOGS.info(f"Bot versiyonunuz: Herlock ==> {HERLOCK_VERSION}")
 
 """
