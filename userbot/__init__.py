@@ -222,7 +222,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
 # Last.fm Modülü
-BIO_PREFIX = os.environ.get("BIO_PREFIX", "@HerlockUserBot | ")
+BIO_PREFIX = os.environ.get("BIO_PREFIX", "@HerlockUserBot1 | ")
 #DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
@@ -267,13 +267,13 @@ PM_AUTO_BAN_LIMIT = int(os.environ.get("PM_AUTO_BAN_LIMIT", 4))
 SPOTIFY_DC = os.environ.get("SPOTIFY_DC", None)
 SPOTIFY_KEY = os.environ.get("SPOTIFY_KEY", None)
 
-PAKET_ISMI = os.environ.get("PAKET_ISMI", "| 🌃 @HerlockUserBot Paketi |")
+PAKET_ISMI = os.environ.get("PAKET_ISMI", "| 🌃 @HerlockUserBot1 Paketi |")
 
 # Userbotu kapatmak için gruplar
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 
 if not BLACKLIST_CHAT: #Eğer ayarlanmamışsa Herlock Support grubu eklenir.
-    BLACKLIST_CHAT = [-1001676544281,-1001580321989]
+    BLACKLIST_CHAT = [-1001720670570,-676459463]
 
 # Otomatik Katılma ve güncellemeler
 OTOMATIK_KATILMA = sb(os.environ.get("OTOMATIK_KATILMA", "True"))
@@ -477,7 +477,7 @@ with bot:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Merhaba ben` @HerlockUserBot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Herlock açabilirsin; Kanala bak` @HerlockUserBot')
+                await event.reply(f'`Merhaba ben` @HerlockUserBot1`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Herlock açabilirsin; Kanala bak` @HerlockUserBot1')
             else:
                 await event.reply(f'`Tengri save Turks! Herlock working... `')
 
@@ -486,12 +486,12 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query == "@HerlockUserBot":
+            if event.query.user_id == uid and query == "@HerlockUserBot1":
                 rev_text = query[::-1]
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Lütfen Sadece .yardım Komutu İle Kullanın",
-                    text=f"**En Gelişmiş UserBot!** [Herlock](https://t.me/HerlockUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
+                    text=f"**En Gelişmiş UserBot!** [Herlock](https://t.me/HerlockUserBot1) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -507,12 +507,12 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "@HerlockUserBot",
-                    text="""@HerlockUserBot'u kullanmayı deneyin!
+                    "@HerlockUserBot1",
+                    text="""@HerlockUserBot1'u kullanmayı deneyin!
 Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın, siz başkasının botunu yönetemezsiniz! Alttaki GitHub adresinden tüm kurulum detayları anlatılmıştır.""",
                     buttons=[
-                        [custom.Button.url("Kanala Katıl", "https://t.me/HerlockUserBot"), custom.Button.url(
-                            "Gruba Katıl", "https://t.me/HerlockSupport")],
+                        [custom.Button.url("Kanala Katıl", "https://t.me/HerlockUserBot1"), custom.Button.url(
+                            "Gruba Katıl", "https://t.me/HerlockSupport1")],
                         [custom.Button.url(
                             "GitHub", "https://github.com/SakirBey1/HerlockUserBot")]
                     ],
@@ -523,11 +523,11 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"sayfa\((.+?)\)")))
         async def sayfa(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @HerlockUserBot kur.", cache_time=0, alert=True)
+                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @HerlockUserBot1 kur.", cache_time=0, alert=True)
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"** En Gelişmiş UserBot!** [Herlock](https://t.me/HerlockUserBot) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
+                f"** En Gelişmiş UserBot!** [Herlock](https://t.me/HerlockUserBot1) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
@@ -535,7 +535,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"bilgi\[(\d*)\]\((.*)\)")))
         async def bilgi(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌  Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @HerlockUserBot kur.", cache_time=0, alert=True)
+                return await event.answer("❌  Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @HerlockUserBot1 kur.", cache_time=0, alert=True)
 
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             komut = event.data_match.group(2).decode("UTF-8")
@@ -555,7 +555,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"komut\[(.*)\[(\d*)\]\]\((.*)\)")))
         async def komut(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @HerlockUserBot kur.", cache_time=0, alert=True)
+                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @HerlockUserBot1 kur.", cache_time=0, alert=True)
 
             cmd = event.data_match.group(1).decode("UTF-8")
             sayfa = int(event.data_match.group(2).decode("UTF-8"))
@@ -661,7 +661,7 @@ async def autobot():
             time.sleep(3)
             await bot.send_message(bf, f"@{username}")
             time.sleep(3)
-            await bot.send_message(bf, "@HerlockUserBot Asistan")
+            await bot.send_message(bf, "@HerlockUserBot1 Asistan")
             time.sleep(3)
             await bot.send_message(bf, "/setuserpic")
             time.sleep(3)
@@ -689,7 +689,7 @@ async def autobot():
         time.sleep(3)
         await bot.send_message(bf, f"@{username}")
         time.sleep(3)
-        await bot.send_message(bf, "@HerlockUserBot ile otomatik olarak oluşturulmuş Asistan")
+        await bot.send_message(bf, "@HerlockUserBot1 ile otomatik olarak oluşturulmuş Asistan")
         time.sleep(3)
         await bot.send_message(bf, "/setuserpic")
         time.sleep(3)
