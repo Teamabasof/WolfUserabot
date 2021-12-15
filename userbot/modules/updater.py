@@ -84,12 +84,12 @@ async def upstream(ups):
         origin = repo.create_remote('upstream', off_repo)
         origin.fetch()
         force_update = True
-        repo.create_head('master', origin.refs.seden)
+        repo.create_head('main', origin.refs.seden)
         repo.heads.seden.set_tracking_branch(origin.refs.sql)
         repo.heads.seden.checkout(True)
 
     ac_br = repo.active_branch.name
-    if ac_br != 'master':
+    if ac_br != 'main':
         await ups.edit(LANG['INVALID_BRANCH'])
         repo.__del__()
         return
@@ -166,7 +166,7 @@ async def upstream(ups):
         else:
             remote = repo.create_remote("heroku", heroku_git_url)
         try:
-            remote.push(refspec="HEAD:refs/heads/master", force=True)
+            remote.push(refspec="HEAD:refs/heads/main", force=True)
         except GitCommandError as error:
             await ups.edit(f'{txt}\n`{LANG["ERRORS"]}:\n{error}`')
             repo.__del__()
@@ -220,12 +220,12 @@ async def asistan_update(ups):
                 origin = repo.create_remote('upstream', off_repo)
                 origin.fetch()
                 force_update = True
-                repo.create_head('master', origin.refs.seden)
+                repo.create_head('main', origin.refs.seden)
                 repo.heads.seden.set_tracking_branch(origin.refs.sql)
                 repo.heads.seden.checkout(True)
 
             ac_br = repo.active_branch.name
-            if ac_br != 'master':
+            if ac_br != 'main':
                 await usp.edit(LANG['INVALID_BRANCH'])
                 repo.__del__()
                 return
@@ -280,7 +280,7 @@ async def asistan_update(ups):
                 else:
                     remote = repo.create_remote("heroku", heroku_git_url)
                 try:
-                    remote.push(refspec="HEAD:refs/heads/master", force=True)
+                    remote.push(refspec="HEAD:refs/heads/main", force=True)
                 except GitCommandError as error:
                     await usp.edit(f'{txt}\n`{LANG["ERRORS"]}:\n{error}`')
                     repo.__del__()
@@ -327,12 +327,12 @@ async def asistan_update(ups):
                 origin = repo.create_remote('upstream', off_repo)
                 origin.fetch()
                 force_update = True
-                repo.create_head('master', origin.refs.seden)
+                repo.create_head('main', origin.refs.seden)
                 repo.heads.seden.set_tracking_branch(origin.refs.sql)
                 repo.heads.seden.checkout(True)
 
             ac_br = repo.active_branch.name
-            if ac_br != 'master':
+            if ac_br != 'main':
                 await usp.edit(LANG['INVALID_BRANCH'])
                 repo.__del__()
                 return
@@ -387,7 +387,7 @@ async def asistan_update(ups):
                 else:
                     remote = repo.create_remote("heroku", heroku_git_url)
                 try:
-                    remote.push(refspec="HEAD:refs/heads/master", force=True)
+                    remote.push(refspec="HEAD:refs/heads/main", force=True)
                 except GitCommandError as error:
                     await usp.edit(f'{txt}\n`{LANG["ERRORS"]}:\n{error}`')
                     repo.__del__()
@@ -410,7 +410,7 @@ async def asistan_update(ups):
 async def upstream(ups):
     HerlockVer = int(HERLOCK_VERSION.split(".")[1])
     if HerlockVer < upVer:
-     await ups.edit(f"**Lütfen owen yöneticileri izin vermeden güncelleme yapmaya çalişma\n Botun bozulabilir\n Güncelleme kanali :** @HerlockUserBot") #Developer şakirbey ulan
+     await ups.edit(f"**Lütfen herlock yöneticileri izin vermeden güncelleme yapmaya çalişma\n Botun bozulabilir\n Güncelleme kanali :** @HerlockUserBot1") #Developer şakirbey ulan
      return
     await ups.edit(LANG['DETECTING'])
     conf = ups.pattern_match.group(1)
@@ -439,12 +439,12 @@ async def upstream(ups):
         origin = repo.create_remote('upstream', off_repo)
         origin.fetch()
         force_update = True
-        repo.create_head('master', origin.refs.seden)
+        repo.create_head('main', origin.refs.seden)
         repo.heads.seden.set_tracking_branch(origin.refs.sql)
         repo.heads.seden.checkout(True)
 
     ac_br = repo.active_branch.name
-    if ac_br != 'master':
+    if ac_br != 'main':
         await ups.edit(LANG['INVALID_BRANCH'])
         repo.__del__()
         return
@@ -465,8 +465,8 @@ async def upstream(ups):
         return
 
     if conf != "now" and not force_update:
-        OwenVer = int(OWEN_VERSION.split(".")[1])
-        if OwenVer < upVer:
+        HerlockVer = int(HERLOCK_VERSION.split(".")[1])
+        if HerlockVer < upVer:
           await ups.edit(f"**Lütfen herlock yöneticileri izin vermeden güncelleme yapmaya çalışma\n Botun bozulabilir\n Güncelleme kanalım :** @HerlockUserBot1")
           return
         changelog_str = LANG['WAS_UPDATE'].format(ac_br, changelog)
@@ -521,7 +521,7 @@ async def upstream(ups):
         else:
             remote = repo.create_remote("heroku", heroku_git_url)
         try:
-            remote.push(refspec="HEAD:refs/heads/master", force=True)
+            remote.push(refspec="HEAD:refs/heads/main", force=True)
         except GitCommandError as error:
             await ups.edit(f'{txt}\n`{LANG["ERRORS"]}:\n{error}`')
             repo.__del__()
