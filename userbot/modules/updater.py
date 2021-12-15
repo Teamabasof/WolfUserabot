@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 # 
 
-# OwenUserBot - ErdewBey - Midy - ByMisakiMey
+# HerlockUserBot - SakirBey
 
 """
 Bu modül commit sayısına bağlı olarak botu günceller.
@@ -17,7 +17,7 @@ import sys
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from userbot import CMD_HELP, HEROKU_APIKEY, HEROKU_APPNAME, UPSTREAM_REPO_URL, ASISTAN, MYID, AUTO_UPDATE, OWEN_VERSION, upVer, EMERGENCY
+from userbot import CMD_HELP, HEROKU_APIKEY, HEROKU_APPNAME, UPSTREAM_REPO_URL, ASISTAN, MYID, AUTO_UPDATE, HERLOCK_VERSION, upVer, EMERGENCY
 from userbot.events import register
 from userbot.cmdhelp import CmdHelp
 
