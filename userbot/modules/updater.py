@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 # 
 
-# OwenUserBot - ErdewBey - Midy - ByMisakiMey
+# HerlockUserBot - SakirBey -  - ByMisakiMey
 
 """
 Bu modül commit sayısına bağlı olarak botu günceller.
