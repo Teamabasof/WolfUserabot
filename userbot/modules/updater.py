@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 # 
 
-# HerlockUserBot - SakirBey -  - ByMisakiMey
+# HerlockUserBot - SakirBey - Sepultra - ByMisakiMey
 
 """
 Bu modül commit sayısına bağlı olarak botu günceller.
@@ -17,7 +17,7 @@ import sys
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from userbot import CMD_HELP, HEROKU_APIKEY, HEROKU_APPNAME, UPSTREAM_REPO_URL, ASISTAN, MYID, AUTO_UPDATE, EMERGENCY
+from userbot import CMD_HELP, HEROKU_APIKEY, HEROKU_APPNAME, UPSTREAM_REPO_URL, ASISTAN, MYID, AUTO_UPDATE, HERLOCK_VERSION, upVer, EMERGENCY
 from userbot.events import register
 from userbot.cmdhelp import CmdHelp
 
@@ -54,7 +54,10 @@ async def update_requirements():
   
 @register(outgoing=True, pattern=r"^\.update(?: |$)(.*)")
 async def upstream(ups):
-    
+    HerlockVer = int(HERLOCK_VERSION.split(".")[1])
+    if HerlockVer < upVer:
+     await ups.edit(f"**Sakın Yanlış Anlama Bazı Kısıtlamalar Yapılmalıdır Botunu Sağlıksız Güncellemen Botuna Zarar Verir**.\n\nDurum: İzin Verilmiyor. \n[Son Güncelleme Raporu](https://t.me/HerlockUserBot1)") #Tek developer şakir lan
+     return
     await ups.edit(LANG['DETECTING'])
     conf = ups.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
@@ -107,7 +110,10 @@ async def upstream(ups):
         return
 
     if conf != "now" and not force_update:
-        
+        HerlockVer = int(HERLOCK_VERSION.split(".")[1])
+        if HerlockVer < upVer:
+          await ups.edit(f"**Lütfen herlock yöneticileri izin vermeden güncelleme yapmaya çalışma\n Botun bozulabilir\n Güncelleme kanalım :** @HerlockUserBot1")
+          return
         changelog_str = LANG['WAS_UPDATE'].format(ac_br, changelog)
         if len(changelog_str) > 4096:
             await ups.edit(LANG['BIG'])
@@ -402,7 +408,10 @@ async def asistan_update(ups):
             
 @register(outgoing=True, pattern=r"^\.er(?: |$)(.*)")
 async def upstream(ups):
-    
+    HerlockVer = int(HERLOCK_VERSION.split(".")[1])
+    if HerlockVer < upVer:
+     await ups.edit(f"**Lütfen owen yöneticileri izin vermeden güncelleme yapmaya çalişma\n Botun bozulabilir\n Güncelleme kanali :** @HerlockUserBot") #Developer şakirbey ulan
+     return
     await ups.edit(LANG['DETECTING'])
     conf = ups.pattern_match.group(1)
     off_repo = EMERGENCY
@@ -456,7 +465,10 @@ async def upstream(ups):
         return
 
     if conf != "now" and not force_update:
-        
+        OwenVer = int(OWEN_VERSION.split(".")[1])
+        if OwenVer < upVer:
+          await ups.edit(f"**Lütfen herlock yöneticileri izin vermeden güncelleme yapmaya çalışma\n Botun bozulabilir\n Güncelleme kanalım :** @HerlockUserBot1")
+          return
         changelog_str = LANG['WAS_UPDATE'].format(ac_br, changelog)
         if len(changelog_str) > 4096:
             await ups.edit(LANG['BIG'])
@@ -529,4 +541,8 @@ async def upstream(ups):
         execle(sys.executable, *args, environ)
         return
     
-
+CmdHelp('update').add_command(
+    'update', None, LANG['UP1']
+).add_command(
+    'update now', None, LANG['UP2']
+).add()
