@@ -51,7 +51,7 @@ async def logo_gen(event):
     if not bg_:
         pics = []
         async for i in event.client.iter_messages(
-            "@epiclogo", filter=InputMessagesFilterPhotos
+            "@SakirBey2", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
         id_ = random.choice(pics)
@@ -92,7 +92,7 @@ async def logo_gen(event):
         await event.client.send_file(
             event.chat_id,
             file=fayladi,
-            caption=f"[HerlockUserBot](https://t.me/herlockuserbot) **{DEFAULT_NAME}** için logo hazırladı.",
+            caption=f"[HerlockUserBot](https://t.me/herlockuserbot1) **{DEFAULT_NAME}** için logo hazırladı.",
             force_document=True,
         )
         os.remove(fayladi)
@@ -104,6 +104,6 @@ async def logo_gen(event):
             os.remove(font_)
 
 Help = CmdHelp('logo')
-Help.add_command('logo', '<yazı>', '@HerlockUserBot sizin için logo hazırlar.')
-Help.add_info('@HerlockUserBot - @SakitBey1 ')
+Help.add_command('logo', '<yazı>', '@HerlockUserBot1 sizin için logo hazırlar.')
+Help.add_info('@HerlockUserBot1 - @SakirBey2 ')
 Help.add() 
