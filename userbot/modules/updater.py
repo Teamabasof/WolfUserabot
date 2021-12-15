@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 # 
 
-# HerlockUserBot - SakirBey - Sepultra - ByMisakiMey
+# OwenUserBot - ErdewBey - Midy - ByMisakiMey
 
 """
 Bu modül commit sayısına bağlı olarak botu günceller.
@@ -17,7 +17,7 @@ import sys
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from userbot import CMD_HELP, HEROKU_APIKEY, HEROKU_APPNAME, UPSTREAM_REPO_URL, ASISTAN, MYID, AUTO_UPDATE, HERLOCK_VERSION, upVer, EMERGENCY
+from userbot import CMD_HELP, HEROKU_APIKEY, HEROKU_APPNAME, UPSTREAM_REPO_URL, ASISTAN, MYID, AUTO_UPDATE, OWEN_VERSION, upVer, EMERGENCY
 from userbot.events import register
 from userbot.cmdhelp import CmdHelp
 
@@ -56,7 +56,7 @@ async def update_requirements():
 async def upstream(ups):
     HerlockVer = int(HERLOCK_VERSION.split(".")[1])
     if HerlockVer < upVer:
-     await ups.edit(f"**Sakın Yanlış Anlama Bazı Kısıtlamalar Yapılmalıdır Botunu Sağlıksız Güncellemen Botuna Zarar Verir**.\n\nDurum: İzin Verilmiyor. \n[Son Güncelleme Raporu](https://t.me/HerlockUserBot1)") #Tek developer şakir lan
+     await ups.edit(f"**Sakın Yanlış Anlama Bazı Kısıtlamalar Yapılmalıdır Botunu Sağlıksız Güncellemen Botuna Zarar Verir**.\n\nDurum: İzin Verilmiyor. \n[Son Güncelleme Raporu](https://t.me/HerlockUserBot1)") #Tek developer SakirBey
      return
     await ups.edit(LANG['DETECTING'])
     conf = ups.pattern_match.group(1)
@@ -410,7 +410,7 @@ async def asistan_update(ups):
 async def upstream(ups):
     HerlockVer = int(HERLOCK_VERSION.split(".")[1])
     if HerlockVer < upVer:
-     await ups.edit(f"**Lütfen herlock yöneticileri izin vermeden güncelleme yapmaya çalişma\n Botun bozulabilir\n Güncelleme kanali :** @HerlockUserBot1") #Developer şakirbey ulan
+     await ups.edit(f"**Lütfen herlock yöneticileri izin vermeden güncelleme yapmaya çalişma\n Botun bozulabilir\n Güncelleme kanali :** @HerlockUserBot1") #Tek developer by : @SakirBey1
      return
     await ups.edit(LANG['DETECTING'])
     conf = ups.pattern_match.group(1)
