@@ -46,6 +46,10 @@
     By establishing Herlock, you are deemed to have accepted these responsibilities.
 ```
 
+# İnstaller
+
+[![İnstaller](https://imgyukle.com/f/2021/12/15/kfez7G.png)](https://github.com/SakirBey1/herlockinstaller)
+
 ### 🇹🇷 Geliştiriciler / Developers 🇺🇲
   [![SakirBey](https://github.com/SakirBey1.png?size=100)](https://github.com/SakirBey1)
  [![FrozenBey](https://github.com/frozenbey.png?size=100)](https://github.com/frozenbey)
