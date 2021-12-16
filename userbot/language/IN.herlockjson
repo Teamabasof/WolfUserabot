@@ -1144,15 +1144,15 @@
 
             "UPDATING": "`The bot is being updated ...`",
 
-            "INVALID_APPNAME": "✨ 𝙊𝙬𝙚𝙣 𝑼𝒔𝒆𝒓𝑩𝒐𝒕 𝑼𝒑𝒅𝒂𝒕𝒆 ✨\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n🛠️**Error:** __To use the updater, you must define the HEROKU_APPNAME variable..__",
+            "INVALID_APPNAME": "✨ 𝐇𝐞𝐫𝐥𝐨𝐜𝐤 𝑼𝒔𝒆𝒓𝑩𝒐𝒕 𝑼𝒑𝒅𝒂𝒕𝒆 ✨\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n🛠️**Error:** __To use the updater, you must define the HEROKU_APPNAME variable..__",
 
             "INVALID_HEROKU": "{}\n`Heroku variables are incorrect or under defined.`",
 
-            "HEROKU_UPDATING": "✨ 𝙊𝙬𝙚𝙣 𝑼𝒔𝒆𝒓𝑩𝒐𝒕 𝑼𝒑𝒅𝒂𝒕𝒆 ✨\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n❤️**Status**: __Updating..\n\n💌 You can be sure that your UserBot will be better :) This process takes a maximum of 10 minutes..__",
+            "HEROKU_UPDATING": "✨ 𝐇𝐞𝐫𝐥𝐨𝐜𝐤 𝑼𝒔𝒆𝒓𝑩𝒐𝒕 𝑼𝒑𝒅𝒂𝒕𝒆 ✨\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n❤️**Status**: __Updating..\n\n💌 You can be sure that your UserBot will be better :) This process takes a maximum of 10 minutes..__",
 
             "ERRORS": "Errors encountered here",
 
-            "SUCCESSFULLY": "✨ 𝙊𝙬𝙚𝙣 𝑼𝒔𝒆𝒓𝑩𝒐𝒕 𝑼𝒑𝒅𝒂𝒕𝒆 ✨\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n❤️**Status:** __Update completed successfully!\n\n🔄 Restarting...__"
+            "SUCCESSFULLY": "✨ 𝐇𝐞𝐫𝐥𝐨𝐜𝐤 𝑼𝒔𝒆𝒓𝑩𝒐𝒕 𝑼𝒑𝒅𝒂𝒕𝒆 ✨\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n❤️**Status:** __Update completed successfully!\n\n🔄 Restarting...__"
 
         },
 
