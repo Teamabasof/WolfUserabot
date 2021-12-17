@@ -93,7 +93,7 @@ CV_MSG = [
 ]
 
 
-UNAPPROVED_MSG = ("`Hey olduğun yerde kal,!👨‍💻 Ben` [HerlockUserBot](t.me/herlockuserbot1) um. Endişelenme!\n\n"
+UNAPPROVED_MSG = ("`Hey olduğun yerde kal,!👨‍💻 Ben` @HerlockUserBot1 . `Endişelenme!`\n\n"
                   "`Sahibim sana mesaj atma izni vermedi o yüzden sahibim seni onaylayana kadar bu mesajı alacaksın.. `"
                   "`Lütfen sahibimin aktif olmasını bekleyin, o genellikle PM'leri onaylar.\n\n`"
                   "`Bildiğim kadarıyla o kafayı yemiş insanlara PM izni vermiyor.`")
