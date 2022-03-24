@@ -99,4 +99,4 @@ async def get_user(event):
     
 @register(incoming=True, from_users=SUDO_ID, pattern="^.salive$")
 async def _(q):
-    await q.client.send_message(q.chat_id,"`Sudom ❤️ \nHerlockUserBot Çalışıyor...`")
+    await q.client.send_message(q.chat_id,"`Hey Sudom ❤️ \nHerlockUserBot Çalışıyor...`")
