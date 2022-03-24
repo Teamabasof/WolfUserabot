@@ -47,7 +47,7 @@ async def covid(event):
                 f"**{bayrak} {LANG['TR_ALL_DEATHS']}** `{countryData['deaths']}`\n" +
                 f"**{bayrak} {LANG['TR_DEATHS']}** `{countryData['todayDeaths']}`\n" +
                 f"**{bayrak} {LANG['TR_HEAL']}** `{countryData['recovered']}`\n" +
-                f"**{bayrak} Test Sayısı:** `{countryData['totalTests']}`"
+                f"**{bayrak} Test Sayısı:** `{countryData['totalTests']}` \n @HerlockUserBot1 \n  @SakirBey2"
                 )
     await event.edit(sonuclar)
 
