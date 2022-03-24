@@ -28,7 +28,7 @@
 
 ### 🇹🇷 Elle Kurulum / Manual Setup 🇺🇲
 
-` https://heroku.com/deploy?template=https://github.com/SakirBey1/HerlockUserBot `
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SakirBey1/HerlockUserBot)
 
 ## 🇹🇷 Bilgilendirme / İnformation 🇺🇲
 ***Herhangi bir istek & şikayet & öneriniz varsa [destek grubuna](https://t.me/HerlockSupport1) ulaşabilirsiniz.***
