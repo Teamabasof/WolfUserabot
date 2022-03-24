@@ -95,7 +95,7 @@ async def revert(event):
         await bot(functions.account.UpdateProfileRequest(about=DEFAULT_BIO))
         await event.edit(f"`{DEFAULT_NAME}, hesabınız başarıyla eski haline döndürüldü!`")
     except AboutTooLongError:
-        srt_bio = "🎆 @HerlockUserBot"
+        srt_bio = "🎆 @HerlockUserBot1"
         await bot(functions.account.UpdateProfileRequest(about=srt_bio))
         await event.edit("`Hesabınız başarıyla eski haline döndürüldü! Fakat bio'nuz çok uzun olduğu için hazır bio kullandım.`")
 
