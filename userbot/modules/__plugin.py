@@ -118,7 +118,7 @@ async def plist(event):
                 continue
 
             if dosyaismi == "py":
-                yuklenen += f"🌈 {plugin.file.name}\n"
+                yuklenen += f"🌟 {plugin.file.name}\n"
         try:
             await event.edit(yuklenen)
         except:
@@ -146,7 +146,7 @@ async def plistasistan(ups):
                     continue
 
                 if dosyaismi == "py":
-                    yuklenen += f"🌈 {plugin.file.name}\n"
+                    yuklenen += f"🌟 {plugin.file.name}\n"
             await usp.edit(yuklenen)
         else:
             await usp.edit(LANG["TEMP_PLUGIN"])
@@ -169,7 +169,7 @@ async def pins(event):
         return
 
     dosyaAdi = reply_message.file.name
-  #  plugins = await event.client.get_messages('@herlockplugin', limit=None, search=dosyaAdi, filter=InputMessagesFilterDocument)
+  #  plugins = await event.client.get_messages('@herlockplugin1', limit=None, search=dosyaAdi, filter=InputMessagesFilterDocument)
 
   #  if len(plugins) == 0:
    #     await event.edit('🍕 `Pizzamı yemeye devam edeceğim. Bu bir Herlock Plugini değil!`')
@@ -240,7 +240,7 @@ async def pins(event):
         return
 
     dosyaAdi = reply_message.file.name
-  #  plugins = await event.client.get_messages('@herlockplugin', limit=None, search=dosyaAdi, filter=InputMessagesFilterDocument)
+  #  plugins = await event.client.get_messages('@herlockplugin1', limit=None, search=dosyaAdi, filter=InputMessagesFilterDocument)
 
   #  if len(plugins) == 0:
    #     await event.edit('🍕 `Pizzamı yemeye devam edeceğim. Bu bir Herlock Plugini değil!`')
