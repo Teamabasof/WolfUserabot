@@ -20,11 +20,11 @@
 
 **Android:** 
 
-`bash <(curl -L https://bit.ly/3lWr1oI)`
+`bash <(curl -L https://bit.ly/3wAUsTM)`
 
 🇹🇷**Tarayıcı Kurulum / Online Setup**🇺🇲
 
-`https://replit.com/@SakirBey1/Herlockinstaller-1#main.sh`
+[![Run on Repl.it](https://replit.com/badge/github/sakirbey1/herlockinstaller)](https://replit.com/@SakirBey1/Herlockinstaller-1#main.sh)
 
 ### 🇹🇷 Elle Kurulum / Manual Setup 🇺🇲
 
