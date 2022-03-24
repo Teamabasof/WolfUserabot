@@ -54,8 +54,3 @@
   [![SakirBey](https://github.com/SakirBey1.png?size=100)](https://github.com/SakirBey1)
  [![FrozenBey](https://github.com/frozenbey.png?size=100)](https://github.com/frozenbey)
 
-## Credit
-[![Thanos](https://github.com/SakirBey1.png?size=100)](https://t.me/ThAnOs_31)
-
-### 🚀 Deploy to heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SakirBey1/HerlockUserBot)
