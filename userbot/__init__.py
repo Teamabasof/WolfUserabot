@@ -43,12 +43,12 @@ ASYNC_POOL = []
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
         level=DEBUG,
-        format="[%(asctime)s - %(levelname)s] - @HerlockUserBot : %(message)s",
+        format="[%(asctime)s - %(levelname)s] - @HerlockUserBot1 : %(message)s",
         datefmt='%d-%b-%y %H:%M:%S')
 else:
     basicConfig(
         level=INFO,
-        format="[%(asctime)s - %(levelname)s] - @HerlockUserBot : %(message)s",
+        format="[%(asctime)s - %(levelname)s] - @HerlockUserBot1 : %(message)s",
         datefmt='%d-%b-%y %H:%M:%S')
 LOGS = getLogger(__name__)
 
@@ -76,7 +76,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LANGUAGE = "DEFAULT"
     
 # Herlock versiyon
-HERLOCK_VERSION = "v1.2"
+HERLOCK_VERSION = "v1.3"
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
 # Telegram API KEY ve HASH
