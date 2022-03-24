@@ -59,7 +59,7 @@ async def f_load(message):
         )
         return
 
-    url = "https://rawcdn.githack.com/SakirBey1/Datas/tree/main/stickerlar/amongus"
+    url = "https://raw.githubusercontent.com/SakirBey1/Datas/tree/main/stickerlar/amongus"
     font = ImageFont.truetype(BytesIO(get(url + "bold.ttf").content), 60)
     imposter = Image.open(BytesIO(get(f"{url}{clr}.png").content))
     text_ = "\n".join(["\n".join(wrap(part, 30)) for part in text.split("\n")])
