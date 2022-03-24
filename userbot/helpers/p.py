@@ -11,7 +11,7 @@ async def _(herlock):
 		await herlock.edit(' '+str(i))
 		sleep({slep})
 Help = CmdHelp("herlockuserbot{fayl_adi}")
-Help.add_command("{name}", None, "Bu plugin @HerlockUserBot tarafından hazırlanmıştır.")
+Help.add_command("{name}", None, "Bu plugin @HerlockUserBot1 tarafından hazırlanmıştır.")
 Help.add()
 								""")
 	return f.close()
@@ -31,7 +31,7 @@ async def _(herlock):
 		await herlock.edit(text)
 		sleep({slep})
 Help = CmdHelp("herlockuserbot{fayl_adi}")
-Help.add_command("{name}", None, "Bu plugin @HerlockUserBot tarafından hazırlanmıştır.")
+Help.add_command("{name}", None, "Bu plugin @HerlockUserBot1 tarafından hazırlanmıştır.")
 Help.add()
 								""")
 	return f.close()
@@ -49,7 +49,7 @@ async def _(herlock):
 	await herlock.client.send_file(herlock.chat_id, random_)
 	await herlock.delete()
 Help = CmdHelp("herlockuserbot{fayl_adi}")
-Help.add_command("{name}", None, "Bu plugin @HerlockUserBot tarafından hazırlanmıştır.")
+Help.add_command("{name}", None, "Bu plugin @HerlockUserBot1 tarafından hazırlanmıştır.")
 Help.add()
 		""")
 
@@ -79,12 +79,12 @@ async def herlockmusic(herlock):
                 await herlock.edit("`Müzik Yükleniyor!")
                 yukle = await rast.download_media()
                 await herlock.edit("`Yükleme tamamlandı!`")
-                await herlock.client.send_file(herlock.chat_id, yukle, caption="@HerlockUserBot sizin için `"+rast.description+" - "+rast.title+"` müziğini seçti iyi dinlemeler. :)")
+                await herlock.client.send_file(herlock.chat_id, yukle, caption="@HerlockUserBot1 sizin için `"+rast.description+" - "+rast.title+"` müziğini seçti iyi dinlemeler. :)")
                 await event.delete()
                 os.remove(yukle)
                 netice = True
 Help = CmdHelp("herlockuserbot{fayl_adi}")
-Help.add_command("{name}", None, "Bu Plugin @HerlockUserBot Tərəfindən Hazırlanmışdır..")
+Help.add_command("{name}", None, "Bu Plugin @HerlockUserBot1 Taradındən Hazırlanmışdır..")
 Help.add()
 		""".format(
 siyahi=siyahi,
