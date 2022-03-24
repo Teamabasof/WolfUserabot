@@ -185,7 +185,7 @@
             "ALREADY": "`Görünüşe göre %s zaten otomatik olarak değişiyor.`",
             "SETTING": "`%s ayarlanıyor...`",
             "BIO": "📆 Tarih: {tarih} | ⏰ Saat: {saat} | ",
-            "NICK": "@HerlockUserBot ❤ @HerlockSupport",
+            "NICK": "@HerlockUserBot1 ❤ @HerlockSupport1",
             "SETTED": "`%s ayarlandı :)`",
             "NAME": "⌚%s",
             "AUTO1": "'isim ya da bio'",
@@ -263,8 +263,8 @@
             "EFECTING": "`Efekt uygulanıyor...`",
             "NOT_FOUND_EFECT": "**Belirttiğiniz efekt bulunamadı! **`Kullanılabileceğiniz efektler: ``çocuk/robot/earrape/hızlı/parazit/yankı`",
             "NEED_VIDEO": "`Lütfen bir videoya yanıt verin!`",
-            "WITH_HERLOCK":"@HerlockUserBot `ile efekt uygulandı.`",
-            "WITH_HERLOCK_GIF": "@HerlockUserBot `ile Gif'e çevirildi.`",
+            "WITH_HERLOCK":"@HerlockUserBot1 `ile efekt uygulandı.`",
+            "WITH_HERLOCK_GIF": "@HerlockUserBot1 `ile Gif'e çevirildi.`",
             "CONVERTING_TO_GIF": "Gif'e çeviriliyor...",
             "UPLOADING_GIF": "`Gif yükleniyor...`",
             "ERROR": "Gif'e çeviremedim :/",
@@ -375,7 +375,7 @@
             "EVA3": "'eval 2+3'",
             "EVA4": "'<python kodu>'",
             "EVA5": "'Küçük python komutları yürütün.'",
-            "EVA6": "'exec print(\"HerlockUserbottan Selamlar!\")'",
+            "EVA6": "'exec print(\"HerlockUserbot'tan Selamlar!\")'",
             "EVA7": "'Sunucunuzda bash komutlarını ve komut dosyalarını çalıştırın.'",
             "EVA8": "'term ls'"
         },
@@ -520,8 +520,8 @@
             "GOODMORNIN_YALL": "`Günaydın!`",
             "GOODBYE_MFRS": "`Görüşürüz... *Windows XP kapanma sesi*`",
             "RESTARTING": "`Bot yeniden başlatılıyor...`",
-            "SUPPORT_GROUP": "[Buradan](http://t.me/HerlockSupport) destek grubumuza ulaşabilirsiniz.",
-            "CREATOR": "Bu Bot @HerlockUserbot Ekibi Tarafından Yapılmıştır.",
+            "SUPPORT_GROUP": "[Buradan](http://t.me/HerlockSupport1) destek grubumuza ulaşabilirsiniz.",
+            "CREATOR": "Bu Bot @HerlockUserbot1 Ekibi Tarafından Yapılmıştır.",
             "README": "[Herlock README.md](https://github.com/SakirBey1/HerlockUserBot/blob/master/README.md)",
             "REPO": "[Herlock Repo](https://github.com/SakirBey1/Herlockuserbot)",
             "CHECK_LOGS": "`Çözülmüş mesaj için userbot loglarını kontrol et!`",
@@ -771,7 +771,7 @@
             "SEARCHING": "`Şarkı aranıyor...`",
             "BLOCKED_DEEZER": "`Mmmh sanırım` @DeezerMusicBot `engellemişsin. Lütfen engeli aç.",
             "NOT_FOUND": "`Aradığınız şarkı bulunamadı! Üzgünüm.`",
-            "UPLOADED_WITH": "@HerlockUserBot ile yüklendi.",
+            "UPLOADED_WITH": "@HerlockUserBot1 ile yüklendi.",
             "USAGE": "`Kullanım:` `.song şarkı ismi/youtube url/spotify url`",
             "SEARCHING_SPOT": "`Şarkı aranıyor ve indiriliyor lütfen bekleyin!",
             "DOWNLOADED": "`İndirme işlemi başarılı lütfen bekleyiniz.`",
@@ -1127,7 +1127,7 @@
             "VC1": "'Bir grupta sesli sohbet başlatır.'",
             "VC2": "'Sesli sohbeti sonlandırır.'",
             "VC3": "'Gruptaki üyeleri sesli sohbete davet eder.'",
-            "VC4": "'@HerlockUserBot Sesli Sohbet Modülüdür.'"
+            "VC4": "'@HerlockUserBot1 Sesli Sohbet Modülüdür.'"
         },
         "texts": {
             "TE1": "'kelimeleri daha süslü bir şekilde yazar oto renk ve font seçiimi yapar.'",
@@ -1173,7 +1173,7 @@
         "smsg": {
             "SM1": "'.pmyaz <kullanıcı/grup/kanal/bot linki> <mesajınız>'",
             "SM2": "'Yazdığınız mesajı veya yanıtladığınız mesajı belirttiğiniz linke gönderir'",
-            "SM3": "'.send @Herlockuserbot selam'"
+            "SM3": "'.send @HerlockUserBot1 selam'"
         }
     }
 }
