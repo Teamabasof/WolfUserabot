@@ -112,6 +112,6 @@ async def _(q):
 		return
 
 c_ = c("pluginmaker")
-c_.add_command("pmake", "<pluginin_komutu> <plugin_hızı> <edit/alt/foto/muzik> ", "@HerlockUserBot Sizin1 İçin Bir plugin Oluşturur...")
+c_.add_command("pmake", "<pluginin_komutu> <plugin_hızı> <edit/alt/foto/muzik> ", "@HerlockUserBot1 Sizin1 İçin Bir plugin Oluşturur...")
 c_.add_info(' Thx to @SakirBey1').add()
 c_.add()
