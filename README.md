@@ -48,7 +48,8 @@
 
 # İnstaller
 
-[![İnstaller](https://imgyukle.com/f/2021/12/15/kfez7G.png)](https://github.com/SakirBey1/herlockinstaller)
+
+[![UseBot](https://resmim.net/cdn/2022/03/17/XNSE1.png)](https://github.com/SakirBey1/herlockinstaller)
 
 ### 🇹🇷 Geliştiriciler / Developers 🇺🇲
   [![SakirBey](https://github.com/SakirBey1.png?size=100)](https://github.com/SakirBey1)
