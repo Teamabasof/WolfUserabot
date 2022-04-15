@@ -32,14 +32,14 @@ async def magaza(event):
     split = plugin.split()
     if plugin == '':
         plugin = 'Son Yüklenen'
-        plugins = await event.client.get_messages('@herlockplugin', limit=15, filter=InputMessagesFilterDocument)
+        plugins = await event.client.get_messages('@herlockplugin1', limit=15, filter=InputMessagesFilterDocument)
     elif len(split) >= 1 and (split[0] == 'random' or split[0] == 'rastgele'):
         plugin = 'Rastgele'
-        plugins = await event.client.get_messages('@herlockplugin', limit=None, filter=InputMessagesFilterDocument)
+        plugins = await event.client.get_messages('@herlockplugin1', limit=None, filter=InputMessagesFilterDocument)
         plugins = sample(plugins, int(split[1]) if len(split) == 2 else 5)
     else:
-        plugins = await event.client.get_messages('@herlockplugin', limit=None, search=plugin, filter=InputMessagesFilterDocument)
-        random = await event.client.get_messages('@herlockplugin', limit=None, filter=InputMessagesFilterDocument)
+        plugins = await event.client.get_messages('@herlockplugin1', limit=None, search=plugin, filter=InputMessagesFilterDocument)
+        random = await event.client.get_messages('@herlockplugin1', limit=None, filter=InputMessagesFilterDocument)
         random = choice(random)
         random_file = random.file.name
 
@@ -69,7 +69,7 @@ async def sinstall(event):
         return await event.edit('**Herlock Plugin Mağazası**\n__Versiyon 1.0__\n\n**⚠️ Hata:** `Lütfen Sadece Say Yazınız .sinstall pluginid`')
     
     await event.edit('**Herlock Plugin Mağazası**\n__Versiyon 1.0__\n\n`🔎 Plugin\'i Getiriyorum...`')
-    plugin = await event.client.get_messages('@herlockplugin', ids=plugin)
+    plugin = await event.client.get_messages('@herlockplugin1', ids=plugin)
     await event.edit(f'**Herlock Plugin Mağazası**\n__Versiyon 1.0__\n\n`✅ {plugin.file.name} Plugini Getirildi!`\n`⬇️ Plugini Yüklüyorum... Bekleyin.`')
     dosya = await plugin.download_media('./userbot/modules/')
     await event.edit(f'**Herlock Plugin Mağazası**\n__Versiyon 1.0__\n\n`✅ {plugin.file.name} indirme başarılı!`\n`⬇️ Plugini Yüklüyorum... Bekleyin.`')
