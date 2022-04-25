@@ -11,8 +11,8 @@
     "productivity"
   ],
   "repository": "https://github.com/SakirBey1/HerlockUserBot",
-  "website":   "https://t.me/HerlockSupport",
-  "success_url": "https://t.me/HerlockUserBot",
+  "website":   "https://t.me/HerlockSupport1",
+  "success_url": "https://t.me/HerlockUserBot1",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -196,7 +196,7 @@
     }, 
     "DEFAULT_BIO": {
       "description": "Varsayılan profil biyografisi.",
-      "value": "@HerlockUserBot",
+      "value": "@HerlockUserBot1",
       "required": false
     },
     "G_DRIVE_CLIENT_SECRET": {
@@ -236,7 +236,7 @@
     },
     "PAKET_ISMI": {
       "description": "Dızla komutu paket ismini belirleyin. Paket ismi şöyle olacaktır: @KullanıcıAdın verdiğin değer 1",
-      "value": "@HerlockUserBot Paketi",
+      "value": "@HerlockUserBot1 Paketi",
       "required": false
     },
     "OTOMATIK_KATILMA": {
