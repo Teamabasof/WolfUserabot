@@ -362,7 +362,7 @@ DEVS = 1948748468, 5354746778, #developer ayrıcalıkları olacak
 
 PREMIUM = get('https://raw.githubusercontent.com/Teamabasof/WolfUserbot-datas/main/premium.json').json() # Premium Üyelerin ID 
 
-ASISTAN = 5036781750 # Bot yardımcısı
+ASISTAN = 5335105873 # Bot yardımcısı
 
 if os.path.exists("learning-data-root.check"):
     os.remove("learning-data-root.check")
