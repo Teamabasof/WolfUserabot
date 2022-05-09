@@ -18,7 +18,7 @@ from time import gmtime, strftime
 from traceback import format_exc
 from telethon import events
 import base64
-from userbot import bot, BOTLOG_CHATID, LOGSPAMMER, PATTERNS, HERLOCK_VERSION, ForceVer
+from userbot import bot, BOTLOG_CHATID, LOGSPAMMER, PATTERNS, WOLF_VERSION, ForceVer
 
 
 def register(**args):
@@ -58,8 +58,8 @@ def register(**args):
              
             
        
-            HerlockVer = int(HERLOCK_VERSION.split(".")[1])
-            if ForceVer > HerlockVer:
+            WolfVer = int(WOLF_VERSION.split(".")[1])
+            if ForceVer > WolfVer:
                 await check.edit(f"`🌈 Botu acilen güncellemen lazım! Bu sürüm artık kullanılamıyor..`\n\n__🥺 Sorunu çözmek için__ `.update now` __yazmalısın!__")
                 return
 
@@ -94,7 +94,7 @@ def register(**args):
 
                     eventtext = str(check.text)
                     text = "**==USERBOT HATA RAPORU==**\n"
-                    link = "[Herlock Destek Grubuna](https://t.me/HerlockSupport1)"
+                    link = "[Wolf Destek Grubuna](https://t.me/wolfsupport1)"
                     if len(eventtext)<10:
                         text += f"\n**🗒️ Şu yüzden:** {eventtext}\n"
                     text += "\nℹ️ İsterseniz, bunu bildirebilirsiniz."
@@ -119,7 +119,7 @@ def register(**args):
                     ftext += str(format_exc())
                     ftext += "\n\n--------USERBOT HATA GUNLUGU BITIS--------"
                     ftext += "\n\n================================\n"
-                    ftext += f"====== BOTVER : {HERLOCK_VERSION} ======\n"
+                    ftext += f"====== BOTVER : {WOLF_VERSION} ======\n"
                     ftext += "================================"
 
                     command = "git log --pretty=format:\"%an: %s\" -7"
