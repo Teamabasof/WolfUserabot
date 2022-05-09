@@ -1,18 +1,18 @@
 {
-  "name": "Herlock UserBot",
-  "description": "Herlock UserBot",
-  "logo": "https://i.hizliresim.com/9tep7oz.jpg",
+  "name": "Wolf UserBot",
+  "description": "Wolf UserBot",
+  "logo": "https://i.hizliresim.com/3o94ts1.jpg",
   "keywords": [
     "telegram",
     "userbot",
-	"Herlock",
+	"Wolf",
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/SakirBey1/HerlockUserBot",
-  "website":   "https://t.me/HerlockSupport1",
-  "success_url": "https://t.me/HerlockUserBot1",
+  "repository": "https://github.com/Teamabasof/WolfUserabot",
+  "website":   "https://t.me/wolfuserbott",
+  "success_url": "https://t.me/wolfuserbott",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -34,7 +34,7 @@
     },
 "CV_MSG": {
   "description": "CV nizde gözükecek olan yazı.",
-  "value": "Sahibim Fazla Bi Bilgi Ayarlamamış Ama Şunu Biliyorum Kendisi Baya Zevkli Birisi Çünkü Herlock Userbot Kullanıyor 😁",
+  "value": "Sahibim Fazla Bi Bilgi Ayarlamamış Ama Şunu Biliyorum Kendisi Baya Zevkli Birisi Çünkü Wolf Userbot Kullanıyor 😁",
   "required": false
     },
     "SPOTIFY_DC": {
@@ -69,7 +69,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Fork sağlamanız durumunda repo URL'nizi buraya ekleyin. Varsayılan olarak kendi repo adresimiz eklidir.",
-      "value": "https://github.com/SakirBey1/HerlockUserBot",
+      "value": "https://github.com/Teamabasof/WolfUserabot",
       "required": true
     },
     "COUNTRY": {
