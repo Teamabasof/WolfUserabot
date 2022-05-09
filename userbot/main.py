@@ -30,9 +30,9 @@ import userbot.cmdhelp
 import glob
 
 ALIVE_MSG = [
-    "        **Hey {wolfsahip} **\n \n✨ Yüklenen Plugin Sayısı {plugin}\n \n👨🏼‍💻 Python Sürümü {python}\n \n⚡️Telethon Sürüm {telethon}\n \nBotun Sapa Sağlam Çalışıyor iyi günler :)☄️\n\n\n         Herlock Sürüm {wolf} ",
+    "        **Hey {wolfsahip} **\n \n✨ Yüklenen Plugin Sayısı {plugin}\n \n👨🏼‍💻 Python Sürümü {python}\n \n⚡️Telethon Sürüm {telethon}\n \nBotun Sapa Sağlam Çalışıyor iyi günler :)☄️\n\n\n         Wolf Sürüm {wolf} ",
     "🎆 `Endişelenme! Seni yanlız bırakmam.` **{wolfsahip}**, `WolfUserbot çalışıyor.` \n Bot Versiyonu: {wolf} ",
-    "`⛈️ Elimden gelenin en iyisini yapmaya hazırım`, **{herlocksahip}** \n Bot Versiyonu: {herlock} ",
+    "`⛈️ Elimden gelenin en iyisini yapmaya hazırım`, **{herlocksahip}** \n Bot Versiyonu: {wolf} ",
     "✨ `WolfUserBot sahibinin emirlerine hazır...` \n Bot Versiyonu: {wolf} ",
     "`Şuan en gelişmiş userbotun düzenlediği mesajı okuyor olmalısın` **{wolfsahip}**. \n Bot Versiyonu: {wolf} ",
     "`Benimi Aramıştın ❓ Ben Buradayım Merak Etme` \n Bot Versiyonu: {wolf} "
