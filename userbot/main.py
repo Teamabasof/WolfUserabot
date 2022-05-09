@@ -15,7 +15,7 @@ import requests
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 from telethon.tl.functions.channels import GetMessagesRequest
-from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, HERLOCK_VERSION, PATTERNS, DEFAULT_NAME, BOT_TOKEN
+from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, WOLF_VERSION, PATTERNS, DEFAULT_NAME, BOT_TOKEN
 from .modules import ALL_MODULES
 from .asisstant.modules import ALL_MODULE
 import userbot.modules.sql_helper.mesaj_sql as MSJ_SQL
@@ -30,12 +30,12 @@ import userbot.cmdhelp
 import glob
 
 ALIVE_MSG = [
-    "        **Hey {herlocksahip} **\n \n✨ Yüklenen Plugin Sayısı {plugin}\n \n👨🏼‍💻 Python Sürümü {python}\n \n⚡️Telethon Sürüm {telethon}\n \nBotun Sapa Sağlam Çalışıyor iyi günler :)☄️\n\n\n         Herlock Sürüm {herlock} ",
-    "🎆 `Endişelenme! Seni yanlız bırakmam.` **{herlocksahip}**, `HerlockUserbot çalışıyor.` \n Bot Versiyonu: {herlock} ",
+    "        **Hey {wolfsahip} **\n \n✨ Yüklenen Plugin Sayısı {plugin}\n \n👨🏼‍💻 Python Sürümü {python}\n \n⚡️Telethon Sürüm {telethon}\n \nBotun Sapa Sağlam Çalışıyor iyi günler :)☄️\n\n\n         Herlock Sürüm {wolf} ",
+    "🎆 `Endişelenme! Seni yanlız bırakmam.` **{wolfsahip}**, `WolfUserbot çalışıyor.` \n Bot Versiyonu: {wolf} ",
     "`⛈️ Elimden gelenin en iyisini yapmaya hazırım`, **{herlocksahip}** \n Bot Versiyonu: {herlock} ",
-    "✨ `HerlockUserBot sahibinin emirlerine hazır...` \n Bot Versiyonu: {herlock} ",
-    "`Şuan en gelişmiş userbotun düzenlediği mesajı okuyor olmalısın` **{herlocksahip}**. \n Bot Versiyonu: {herlock} ",
-    "`Benimi Aramıştın ❓ Ben Buradayım Merak Etme` \n Bot Versiyonu: {herlock} "
+    "✨ `WolfUserBot sahibinin emirlerine hazır...` \n Bot Versiyonu: {wolf} ",
+    "`Şuan en gelişmiş userbotun düzenlediği mesajı okuyor olmalısın` **{wolfsahip}**. \n Bot Versiyonu: {wolf} ",
+    "`Benimi Aramıştın ❓ Ben Buradayım Merak Etme` \n Bot Versiyonu: {wolf} "
 ]
 
 DIZCILIK_STR = [
@@ -93,7 +93,7 @@ CV_MSG = [
 ]
 
 
-UNAPPROVED_MSG = ("`Hey olduğun yerde kal,!👨‍💻 Ben` @HerlockUserBot1 . `Endişelenme!`\n\n"
+UNAPPROVED_MSG = ("`Hey olduğun yerde kal,!👨‍💻 Ben` @wolfuserbott . `Endişelenme!`\n\n"
                   "`Sahibim sana mesaj atma izni vermedi o yüzden sahibim seni onaylayana kadar bu mesajı alacaksın.. `"
                   "`Lütfen sahibimin aktif olmasını bekleyin, o genellikle PM'leri onaylar.\n\n`"
                   "`Bildiğim kadarıyla o kafayı yemiş insanlara PM izni vermiyor.`")
@@ -152,11 +152,11 @@ def extractCommands(file):
                             KomutStr = Command
                         Komutlar.append(KomutStr)
 
-            # HERLOCKPY
-            Herlockpy = re.search('\"\"\"HERLOCKPY(.*)\"\"\"', FileRead, re.DOTALL)
-            if not Herlockpy == None:
-                Herlockpy = Herlockpy.group(0)
-                for Satir in Herlockpy.splitlines():
+            # WOLFPY
+            Wolfpy = re.search('\"\"\"WOLFPY(.*)\"\"\"', FileRead, re.DOTALL)
+            if not Wolfpy == None:
+                Wolfpy = Wolfpy.group(0)
+                for Satir in Wolfpy.splitlines():
                     if (not '"""' in Satir) and (':' in Satir):
                         Satir = Satir.split(':')
                         Isim = Satir[0]
@@ -177,10 +177,10 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    herlockbl = requests.get('https://raw.githubusercontent.com/SakirBey1/Datas/main/blacklist.json').json()
+    herlockbl = requests.get('https://raw.githubusercontent.com/Teamabasof/WolfUserbot-datas/main/blacklist.json').json()
     if idim in herlockbl:
-        bot.send_message("me", f"`❌ Herlock yöneticileri sizi bottan yasakladı! Bot kapatılıyor...`")
-        LOGS.error("Herlock yöneticileri sizi bottan yasakladı! Bot kapatılıyor...")
+        bot.send_message("me", f"`❌ Wolf yöneticileri sizi bottan yasakladı! Bot kapatılıyor...`")
+        LOGS.error("Wolf yöneticileri sizi bottan yasakladı! Bot kapatılıyor...")
         bot.disconnect()
     # ChromeDriver'ı Ayarlayalım #
     try:
@@ -280,12 +280,12 @@ if BOT_TOKEN:
 os.system("clear")
 
 LOGS.info("+===========================================================+")
-LOGS.info("|                     ✨Herlcok Userbot✨                       |")
+LOGS.info("|                     ✨Wolf Userbot✨                     |")
 LOGS.info("+==============+==============+==============+==============+")
-LOGS.info("|                                                            |")
+LOGS.info("|                                                           |")
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
           " Yardıma İhtiyacınız varsa, Destek grubumuza gelin t.me/HerlockSupport1")
-LOGS.info(f"Bot versiyonunuz: Herlock ==> {HERLOCK_VERSION}")
+LOGS.info(f"Bot versiyonunuz: Herlock ==> {WOLF_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
