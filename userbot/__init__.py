@@ -43,12 +43,12 @@ ASYNC_POOL = []
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
         level=DEBUG,
-        format="[%(asctime)s - %(levelname)s] - @HerlockUserBot1 : %(message)s",
+        format="[%(asctime)s - %(levelname)s] - @WolfUserBott : %(message)s",
         datefmt='%d-%b-%y %H:%M:%S')
 else:
     basicConfig(
         level=INFO,
-        format="[%(asctime)s - %(levelname)s] - @HerlockUserBot1 : %(message)s",
+        format="[%(asctime)s - %(levelname)s] - @WolfUserBott : %(message)s",
         datefmt='%d-%b-%y %H:%M:%S')
 LOGS = getLogger(__name__)
 
@@ -130,7 +130,7 @@ if HEROKU_APPNAME is not None and HEROKU_APIKEY is not None:
         Heroku = heroku3.from_key(HEROKU_APIKEY)
         app = Heroku.app(HEROKU_APPNAME)
         heroku_var = app.config()
-        heroku_var["UPSTREAM_REPO_URL"] = "https://github.com/SakirBey1/HerlockUserBot.git"
+        heroku_var["UPSTREAM_REPO_URL"] = "https://github.com/Teamabasof/WolfUserabot.git"
 else:
     app = None
 
@@ -157,8 +157,8 @@ AI_LANG = os.environ.get("AI_LANG", 'en')
 # Güncelleyici için özel (fork) repo linki.
 STABILITY = sb(os.environ.get("STABILITY", "True")) # 
 
-UPSTREAM_REPO_URL = "https://github.com/SakirBey1/HerlockUserBot.git" 
-EMERGENCY = "https://github.com/SakirBey1/HerlockUserBot.git" # Acil durrum için
+UPSTREAM_REPO_URL = "https://github.com/Teamabasof/WolfUserabot.git" 
+EMERGENCY = "https://github.com/Teamabasof/WolfUserabot.git" # Acil durrum için
 # Afk mesajların iletilmesi
 AFKILETME = sb(os.environ.get("AFKILETME", "True"))
 
@@ -222,7 +222,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
 # Last.fm Modülü
-BIO_PREFIX = os.environ.get("BIO_PREFIX", "@HerlockUserBot1 | ")
+BIO_PREFIX = os.environ.get("BIO_PREFIX", "@WolfUserBott | ")
 #DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
@@ -267,7 +267,7 @@ PM_AUTO_BAN_LIMIT = int(os.environ.get("PM_AUTO_BAN_LIMIT", 4))
 SPOTIFY_DC = os.environ.get("SPOTIFY_DC", None)
 SPOTIFY_KEY = os.environ.get("SPOTIFY_KEY", None)
 
-PAKET_ISMI = os.environ.get("PAKET_ISMI", "| 🌃 @HerlockUserBot1 Paketi |")
+PAKET_ISMI = os.environ.get("PAKET_ISMI", "| 🌃 @WolfUserBott Paketi |")
 
 # Userbotu kapatmak için gruplar
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
@@ -282,7 +282,7 @@ AUTO_UPDATE =  sb(os.environ.get("AUTO_UPDATE", "True"))
 
 # Özel Pattern'ler
 PATTERNS = os.environ.get("PATTERNS", ".;!,")
-WHITELIST = get('https://raw.githubusercontent.com/SakirBey1/Datas/main/whitelist.json').json()
+WHITELIST = get('https://raw.githubusercontent.com/Teamabasof/WolfUserbot-datas/main/whitelist.json').json()
 
 # Bot versiyon kontrolü
 forceVer = []
@@ -291,7 +291,7 @@ if os.path.exists("force-surum.check"):
 else:
     LOGS.info("Force Sürüm Kontrol dosyası yok, getiriliyor...")
 
-URL = 'https://rawcdn.githack.com/SakirBey1/Datas/e4ff3671efa2409eaeba4e7184c5d3bed9ab2ea9/force-surum.check' 
+URL = 'https://raw.githack.com/Teamabasof/WolfUserbot-datas/main/force-update.check?raw=true' 
 with open('force-surum.check', 'wb') as load:
     load.write(get(URL).content)
 
@@ -311,7 +311,7 @@ if os.path.exists("force-update.check"):
 else:
     LOGS.info("Force Update Kontrol dosyası yok, getiriliyor...")
 
-URL = 'https://rawcdn.githack.com/SakirBey1/Datas/e4ff3671efa2409eaeba4e7184c5d3bed9ab2ea9/force-update.check' 
+URL = 'https://raw.githack.com/Teamabasof/WolfUserbot-datas/main/force-update.check' 
 with open('force-update.check', 'wb') as load:
     load.write(get(URL).content)
 
@@ -358,9 +358,9 @@ else:
     # pylint: devre dışı=geçersiz ad
     bot = TelegramClient("userbot", API_KEY, API_HASH)
 
-DEVS = 1948748468, 1441286617, #developer ayrıcalıkları olacak
+DEVS = 1948748468, 5354746778, #developer ayrıcalıkları olacak
 
-PREMIUM = get('https://raw.githubusercontent.com/SakirBey1/Datas/main/premium.json').json() # Premium Üyelerin ID 
+PREMIUM = get('https://raw.githubusercontent.com/Teamabasof/WolfUserbot-datas/main/premium.json').json() # Premium Üyelerin ID 
 
 ASISTAN = 5036781750 # Bot yardımcısı
 
@@ -369,7 +369,7 @@ if os.path.exists("learning-data-root.check"):
 else:
     LOGS.info("Braincheck dosyası yok, getiriliyor...")
 
-URL = 'https://rawcdn.githack.com/SakirBey1/Datas/e4ff3671efa2409eaeba4e7184c5d3bed9ab2ea9/learning-data-root.check'
+URL = 'https://raw.githack.com/Teamabasof/WolfUserbot-datas/main/learning-data-root.check'
 with open('learning-data-root.check', 'wb') as load:
     load.write(get(URL).content)
     
@@ -477,21 +477,21 @@ with bot:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Merhaba ben` @HerlockUserBot1`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Herlock açabilirsin; Kanala bak` @HerlockUserBot1')
+                await event.reply(f'`Merhaba ben` @WolfUserBott`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Wolf açabilirsin; Kanala bak` @WolfUserBott')
             else:
-                await event.reply(f'`Tengri save Turks! Herlock working... `')
+                await event.reply(f'`Tengri save Turks! Wolf working... `')
 
         @tgbot.on(InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query == "@HerlockUserBot1":
+            if event.query.user_id == uid and query == "@WolfUserBott":
                 rev_text = query[::-1]
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Lütfen Sadece .yardım Komutu İle Kullanın",
-                    text=f"**En Gelişmiş UserBot!** [Herlock](https://t.me/HerlockUserBot1) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
+                    text=f"**En Gelişmiş UserBot!** [Wolf](https://t.me/WolfUserBott) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -507,14 +507,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "@HerlockUserBot1",
-                    text="""@HerlockUserBot1'u kullanmayı deneyin!
+                    "@WolfUserBott",
+                    text="""@WolfUserBott'u kullanmayı deneyin!
 Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın, siz başkasının botunu yönetemezsiniz! Alttaki GitHub adresinden tüm kurulum detayları anlatılmıştır.""",
                     buttons=[
-                        [custom.Button.url("Kanala Katıl", "https://t.me/HerlockUserBot1"), custom.Button.url(
-                            "Gruba Katıl", "https://t.me/HerlockSupport1")],
+                        [custom.Button.url("Kanala Katıl", "https://t.me/WolfUserBott"), custom.Button.url(
+                            "Gruba Katıl", "https://t.me/wolfsupport1")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/SakirBey1/HerlockUserBot")]
+                            "GitHub", "https://github.com/Teamabasof/WolfUserabot")]
                     ],
                     link_preview=False
                 )
@@ -523,11 +523,11 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"sayfa\((.+?)\)")))
         async def sayfa(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @HerlockUserBot1 kur.", cache_time=0, alert=True)
+                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @WolfUserBott kur.", cache_time=0, alert=True)
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"** En Gelişmiş UserBot!** [Herlock](https://t.me/HerlockUserBot1) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
+                f"** En Gelişmiş UserBot!** [Wolf](https://t.me/WolfUserBott) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
@@ -535,7 +535,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"bilgi\[(\d*)\]\((.*)\)")))
         async def bilgi(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌  Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @HerlockUserBot1 kur.", cache_time=0, alert=True)
+                return await event.answer("❌  Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @WolfUserBott kur.", cache_time=0, alert=True)
 
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             komut = event.data_match.group(2).decode("UTF-8")
@@ -555,7 +555,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"komut\[(.*)\[(\d*)\]\]\((.*)\)")))
         async def komut(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @HerlockUserBot1 kur.", cache_time=0, alert=True)
+                return await event.answer("❌ Hey! Benim mesajlarımı düzenlemeye kalkma! Kendine bir @WolfUserBott kur.", cache_time=0, alert=True)
 
             cmd = event.data_match.group(1).decode("UTF-8")
             sayfa = int(event.data_match.group(2).decode("UTF-8"))
