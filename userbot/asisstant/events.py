@@ -77,7 +77,7 @@ def herlock(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**ASİSTAN HATA RAPORU**\n"
-                    link = "[Herlock Destek Grubu](https://t.me/HerlockSupport)"
+                    link = "[Wolf Destek Grubu](https://t.me/wolfsupport1)"
                     text += "İsterseniz, bunu rapor edebilirsiniz"
                     text += f"- sadece bu mesajı buraya iletin {link}.\n"
                     text += "Hata ve Tarih dışında hiçbir şey kaydedilmez\n"
