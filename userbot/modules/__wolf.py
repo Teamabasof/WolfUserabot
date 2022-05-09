@@ -17,13 +17,13 @@ from userbot.events import register
 # ██████ LANGUAGE CONSTANTS ██████ #
 
 from userbot.language import get_value
-LANG = get_value("__herlock")
+LANG = get_value("__wolf")
 
 # ████████████████████████████████ #
 
-@register(outgoing=True, pattern="^.[Hh]erlock(?: |$)(.*)")
-async def herlock(event):
-    """ .herlock komutun """
+@register(outgoing=True, pattern="^.[Ww]olf(?: |$)(.*)")
+async def wolf(event):
+    """ .wolf komutun """
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
