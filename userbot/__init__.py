@@ -451,10 +451,10 @@ with bot:
         bot(LeaveChannelRequest("@siriot"))
         bot(LeaveChannelRequest("@jokerpluginn"))
         bot(LeaveChannelRequest("@siriaddon"))
-        bot(JoinChannelRequest("@HerlockUserBot1"))
-        bot(JoinChannelRequest("@HerlockSupport1"))
-        bot(JoinChannelRequest("@HerlockPlugin1"))
-        bot(JoinChannelRequest("@SakirBey2"))
+        bot(JoinChannelRequest("@WolfUserBott"))
+        bot(JoinChannelRequest("@wolfsupport1"))
+        bot(JoinChannelRequest("@wolfplugin"))
+        bot(JoinChannelRequest("@TTteamabasof"))
         bot(JoinChannelRequest("@Sakirhackofficial99"))
         bot(JoinChannelRequest("@Sakirhackoficial99"))
 
@@ -491,7 +491,7 @@ with bot:
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Lütfen Sadece .yardım Komutu İle Kullanın",
-                    text=f"**En Gelişmiş UserBot!** [Wolf](https://t.me/WolfUserBott) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
+                    text=f"**En Gelişmiş UserBot!** [Wolf🐺](https://t.me/WolfUserBott) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -527,7 +527,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"** En Gelişmiş UserBot!** [Wolf](https://t.me/WolfUserBott) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
+                f"** En Gelişmiş UserBot!** [Wolf🐺](https://t.me/WolfUserBott) __Çalışıyor...__\n\n**Yüklenen Modül Sayısı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
