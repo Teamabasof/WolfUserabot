@@ -37,7 +37,7 @@ class InteractiveTelegramClient(TelegramClient):
             proxy=proxy
         )
         self.found_media = {}
-        print('@HerlockUserBot String Alıcıya Hoş Geldiniz')
+        print('@WolfUserBot String Alıcıya Hoş Geldiniz')
         print('[i] Telegramın Sunucularına Bağlanılıyor...')
         try:
             loop.run_until_complete(self.connect())
@@ -120,7 +120,7 @@ if __name__ == '__main__':
          hashh = soup.find("input", {"name": "hash"}).get("value")
          AppInfo = {
             "hash": hashh,
-            "app_title":"herlock UserBot",
+            "app_title":"wolf UserBot",
             "app_shortname": "herlockai" + str(random.randint(9, 99)) + str(time.time()).replace(".", ""),
             "app_url": "",
             "app_platform": "android",
