@@ -4,7 +4,7 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
-# HerlockUserBot - SakirBey - Herlock
+# WolfUserBott - Teamabasof - Wolf
 
 from datetime import datetime
 from telethon import events
