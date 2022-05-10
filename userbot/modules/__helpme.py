@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# HerlockUserBot - SakirBey1 - Herlockexe
+# WolfUserBott - Teamabasof - Wolf
 
 # @Qulec tarafından yazılmıştır.
 # Thanks @SakirBey1.
