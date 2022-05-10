@@ -60,7 +60,7 @@ def register(**args):
        
             WolfVer = int(WOLF_VERSION.split(".")[1])
             if ForceVer > WolfVer:
-                await check.edit(f"`🌈 Botu acilen güncellemen lazım! Bu sürüm artık kullanılamıyor..`\n\n__🥺 Sorunu çözmek için__ `.update now` __yazmalısın!__")
+                await check.edit(f"`🐺 Botu acilen güncellemen lazım! Bu sürüm artık kullanılamıyor..`\n\n__🥺 Sorunu çözmek için__ `.update now` __yazmalısın!__")
                 return
 
             if not LOGSPAMMER:
