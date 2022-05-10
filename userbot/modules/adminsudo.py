@@ -8,7 +8,7 @@
 #
 
 """
-HerlockUserBot
+WolfUserBott
 """
 
 from asyncio import sleep
