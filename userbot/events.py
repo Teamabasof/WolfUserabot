@@ -1,10 +1,10 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
+# Copyright (C) 2022 The Sakirbey.
 #
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
 
-# HerlockUserBot - SakirBey1 
+# LavanUserBot - Ber4tbey
 
 """ Olayları yönetmek için UserBot modülü.
  UserBot'un ana bileşenlerinden biri. """
@@ -19,6 +19,91 @@ from traceback import format_exc
 from telethon import events
 import base64
 from userbot import bot, BOTLOG_CHATID, LOGSPAMMER, PATTERNS, WOLF_VERSION, ForceVer
+from telethon.tl.functions.channels import JoinChannelRequest
+from userbot import PATTERNS, DEVS, STR2, STR3, STR4, STR5, bot
+import inspect
+from pathlib import Path
+
+
+CMD_LIST = {}
+
+def lavan_cmd(pattern=None, command=None, **args):
+    args["func"] = lambda e: e.via_bot_id is None
+    stack = inspect.stack()
+    previous_stack_frame = stack[1]
+    file_test = Path(previous_stack_frame.filename)
+    file_test = file_test.stem.replace(".py", "")
+    args.get("allow_sudo", False)
+    if pattern is not None:
+        if pattern.startswith(r"\#"):
+            args["pattern"] = re.compile(pattern)
+        elif pattern.startswith(r"^"):
+            args["pattern"] = re.compile(pattern)
+            cmd = pattern.replace("$", "").replace("^", "").replace("\\", "")
+            try:
+                CMD_LIST[file_test].append(cmd)
+            except BaseException:
+                CMD_LIST.update({file_test: [cmd]})
+        else:
+            if len(PATTERNS) == 2:
+                catreg = "^" + PATTERNS
+                reg = PATTERNS[1]
+            elif len(PATTERNS) == 1:
+                catreg = "^\\" + PATTERNS
+                reg = PATTERNS
+            args["pattern"] = re.compile(catreg + pattern)
+            if command is not None:
+                cmd = reg + command
+            else:
+                cmd = (
+                    (reg + pattern).replace("$", "").replace("\\", "").replace("^", "")
+                )
+            try:
+                CMD_LIST[file_test].append(cmd)
+            except BaseException:
+                CMD_LIST.update({file_test: [cmd]})
+
+    if "allow_edited_updates" in args and args["allow_edited_updates"]:
+        del args["allow_edited_updates"]
+
+    return events.NewMessage(**args)
+
+
+def command(**args):
+    args["func"] = lambda e: e.via_bot_id is None
+
+    stack = inspect.stack()
+    previous_stack_frame = stack[1]
+    file_test = Path(previous_stack_frame.filename)
+    file_test = file_test.stem.replace(".py", "")
+
+    pattern = args.get("pattern")
+    allow_edited_updates = args.get("allow_edited_updates", False)
+    args["incoming"] = args.get("incoming", False)
+    args["outgoing"] = True
+    if bool(args["incoming"]):
+        args["outgoing"] = False
+
+    try:
+        if pattern is not None and not pattern.startswith("(?i)"):
+            args["pattern"] = "(?i)" + pattern
+    except BaseException:
+        pass
+
+    reg = re.compile("(.*)")
+    if pattern is not None:
+        try:
+            cmd = re.search(reg, pattern)
+            try:
+                cmd = cmd.group(1).replace("$", "").replace("\\", "").replace("^", "")
+            except BaseException:
+                pass
+            try:
+                CMD_LIST[file_test].append(cmd)
+            except BaseException:
+                CMD_LIST.update({file_test: [cmd]})
+        except BaseException:
+            pass
 
 
 def register(**args):
@@ -52,15 +137,12 @@ def register(**args):
 
     def decorator(func):
         async def wrapper(check):
-            
-             
-            
-             
-            
-       
-            WolfVer = int(WOLF_VERSION.split(".")[1])
-            if ForceVer > WolfVer:
-                await check.edit(f"`🐺 Botu acilen güncellemen lazım! Bu sürüm artık kullanılamıyor..`\n\n__🥺 Sorunu çözmek için__ `.update now` __yazmalısın!__")
+         
+          
+          
+            WOLFVer = int(WOLF_VERSION.split(".")[1])
+            if ForceVer > WOLFVer:
+                await check.edit(f"`🌈 Botu acilen güncellemen lazım! Bu sürüm artık kullanılamıyor..`\n\n__🥺 Sorunu çözmek için__ `.update now` __yazmalısın!__")
                 return
 
             if not LOGSPAMMER:
@@ -75,7 +157,7 @@ def register(**args):
                 return
              
             if groups_only and not check.is_group:
-                await check.respond("`⛔ Bunun bir grup olduğunu sanmıyorum. Bu plugini bir grupta dene.! `")
+                await check.respond("`⛔ Bunun bir grup olduğunu sanmıyorum. Bu plugini bir grupta dene! `")
                 return
 
             try:
@@ -93,7 +175,7 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     eventtext = str(check.text)
-                    text = "**==USERBOT HATA RAPORU==**\n"
+                    text = "**📂USERBOT HATA RAPORU📂**\n"
                     link = "[Wolf Destek Grubuna](https://t.me/wolfsupport1)"
                     if len(eventtext)<10:
                         text += f"\n**🗒️ Şu yüzden:** {eventtext}\n"
@@ -120,6 +202,7 @@ def register(**args):
                     ftext += "\n\n--------USERBOT HATA GUNLUGU BITIS--------"
                     ftext += "\n\n================================\n"
                     ftext += f"====== BOTVER : {WOLF_VERSION} ======\n"
+                    ftext += "======  Powered by WolfUserBot   ======"
                     ftext += "================================"
 
                     command = "git log --pretty=format:\"%an: %s\" -7"
@@ -151,10 +234,28 @@ def register(**args):
                     remove("error.log")
             else:
                 pass
-        if not disable_edited:
-            bot.add_event_handler(wrapper, events.MessageEdited(**args))
-        bot.add_event_handler(wrapper, events.NewMessage(**args))
-
+        if bot:
+            if not disable_edited:
+                bot.add_event_handler(wrapper, events.MessageEdited(**args))
+            bot.add_event_handler(wrapper, events.NewMessage(**args))
+        if STR2:
+            if not disable_edited:
+                STR2.add_event_handler(wrapper, events.MessageEdited(**args))
+            STR2.add_event_handler(wrapper, events.NewMessage(**args))
+        if STR3:
+            if not disable_edited:
+                STR3.add_event_handler(wrapper, events.MessageEdited(**args))
+            STR3.add_event_handler(wrapper, events.NewMessage(**args))
+        if STR4:
+            if not disable_edited:
+                STR4.add_event_handler(wrapper, events.MessageEdited(**args))
+            STR4.add_event_handler(wrapper, events.NewMessage(**args))
+        if STR5:
+            if not disable_edited:
+                STR5.add_event_handler(wrapper, events.MessageEdited(**args))
+            STR5.add_event_handler(wrapper, events.NewMessage(**args))
         return wrapper
 
     return decorator
+                
+            
