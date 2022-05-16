@@ -75,8 +75,8 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LOGS.info("Bilinmeyen bir dil yazdınız. Bundan dolayı DEFAULT kullanılıyor.")
     LANGUAGE = "DEFAULT"
     
-# Herlock versiyon
-WOLF_VERSION = "v5.0"
+# Wolf versiyon
+WOLF_VERSION = "v1.4"
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
 # Telegram API KEY ve HASH
