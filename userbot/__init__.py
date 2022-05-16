@@ -76,7 +76,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LANGUAGE = "DEFAULT"
     
 # Herlock versiyon
-WOLF_VERSION = "v1.3"
+WOLF_VERSION = "v5.0"
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
 # Telegram API KEY ve HASH
