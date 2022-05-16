@@ -62,9 +62,9 @@ class CmdHelp:
         fFile = ffile.capitalize()
         result = f"🗂️ `{fFile}` **Plugini:** \n"
         if self.WARNING == '' and self.INFO == '':
-            result += f"**✨ Official:** {'✅' if self.IS_OFFICIAL else '❌'}\n\n"
+            result += f"**✨ Official:** {'✅' if self.IS_OFFICIAL else '❌'}\n\n @SakirBey2"
         else:
-            result += f"**✨ Official:** {'✅' if self.IS_OFFICIAL else '❌'}\n"
+            result += f"**✨ Official:** {'✅' if self.IS_OFFICIAL else '❌'}\n\n @SakirBey2"
             
             if self.INFO == '':
                 if not self.WARNING == '':
